@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id = "helloWorld" class = "SpringExamples.helloWorld.HelloWorld" >
+		<property name = "message1" value = "Hello World!"/>
+		<property name = "message2" value = "Hello Second World!"/>
+		
+	</bean>
+	
+	<bean id = "beanTemplate" abstract = "true">
+    	<property name = "message1" value = "Hello World!"/>
+    	<property name = "message2" value = "Hello Second World!"/>
+    	<property name = "message3" value = "Merhaba Türkiye!"/>
+	</bean>
+	
+	<bean id ="helloTurkey" class = "SpringExamples.helloWorld.HelloTurkey" parent = "beanTemplate">
+		<property name = "message1" value = "Hello Turkey!"/>
+		<property name = "message3" value = "Merhaba Türkiye!"/>
+	</bean>
+   	
+	
+</beans>
+
