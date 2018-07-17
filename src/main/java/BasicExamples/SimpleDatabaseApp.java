@@ -21,7 +21,7 @@ public class SimpleDatabaseApp {
 			myConnection = DriverManager.getConnection(url, username, password);
 			
 			myStatement = myConnection.createStatement();
-			myResult = myStatement.executeQuery("select * from kullanıcılar");
+			myResult = myStatement.executeQuery("select * from users");
 			
 			
 			
@@ -39,7 +39,7 @@ public class SimpleDatabaseApp {
 					surname = scan.nextLine();
 					
 					try {
-						myStatement.executeUpdate("insert into kullanıcılar" + "(ad, soyad)" + "values ('" + name + "', '" + surname + "')");
+						myStatement.executeUpdate("insert into users" + "(name, surname)" + "values ('" + name + "', '" + surname + "')");
 						System.out.println("\n" + name + " " + surname + " successfuly added to database.\n");
 					}
 					catch (Exception e) {
@@ -48,12 +48,12 @@ public class SimpleDatabaseApp {
 					
 				}
 				else if (selection == 2) {
-					myResult = myStatement.executeQuery("select * from kullanıcılar");
+					myResult = myStatement.executeQuery("select * from users");
 					if (!myResult.next())
 						System.out.println("List is empty.");
 					else {
 						do {
-							System.out.println(myResult.getString("ad") + " " + myResult.getString("soyad"));
+							System.out.println(myResult.getString("name") + " " + myResult.getString("surname"));
 						} while (myResult.next());
 					}
 					System.out.println();
