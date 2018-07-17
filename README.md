@@ -1,6 +1,6 @@
 # FreeWork
 
-Prerequisites
+Prerequisites:
 
 1. Maven - done
 2. Java Conventions - done
@@ -9,7 +9,7 @@ Prerequisites
 5. WireShark
 
 
-FreeWorks
+FreeWorks:
 
 1. String implementation - done
 1. Map implementation - done
