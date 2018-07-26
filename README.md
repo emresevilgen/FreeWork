@@ -15,12 +15,12 @@ FreeWorks:
 1. String implementation - done
 1. Map implementation - done
 2. Console application (Ask what do you want, 1- Save, 2- List) (DB Save, DB List) - done
-3. Web application (DB Save, DB List)
+3. Web application (DB Save, DB List) - done
 
 Blog:
-1. String
-2. Map
-3. Database console application
-4. Database web application
+1. String - almost done
+2. Map - almost done
+3. Database console application - almost done
+4. Database web application - almost done
 
 
