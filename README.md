@@ -24,6 +24,6 @@ Blog:
 4. Database web application
 5. Java Applet
 6. Java Properties Files
-7. XFF and CSRF
+7. XFF and CSRF - presentation
 
 
