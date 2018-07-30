@@ -18,9 +18,9 @@ FreeWorks:
 3. Web application (DB Save, DB List) - done
 
 Blog:
-1. String - almost done
-2. Map - almost done
-3. Database console application - almost done
+1. String - done
+2. Map - done
+3. Database console application - done
 4. Database web application
 5. Java Applet
 6. Java Properties Files
