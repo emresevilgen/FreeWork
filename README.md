@@ -21,8 +21,8 @@ Blog:
 1. String - done
 2. Map - done
 3. Database console application - done
-4. Database web application
-5. Java Applet
+4. Database web application - done
+5. Java Applet - done
 6. Java Properties Files
 7. XFF and CSRF - presentation
 
