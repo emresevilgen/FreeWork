@@ -23,7 +23,7 @@ Blog:
 3. Database console application - done
 4. Database web application - done
 5. Java Applet - done
-6. Java Properties Files
+6. Java Properties Files - done
 7. XFF and CSRF - presentation
 
 
