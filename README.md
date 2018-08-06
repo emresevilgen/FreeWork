@@ -16,6 +16,7 @@ FreeWorks:
 1. Map implementation - done
 2. Console application (Ask what do you want, 1- Save, 2- List) (DB Save, DB List) - done
 3. Web application (DB Save, DB List) - done
+4. Web application (DB Save, DB List) with CSS and JavaScript
 
 Blog:
 1. String - done
@@ -25,5 +26,6 @@ Blog:
 5. Java Applet - done
 6. Java Properties Files - done
 7. XFF and CSRF - presentation
+
 
 

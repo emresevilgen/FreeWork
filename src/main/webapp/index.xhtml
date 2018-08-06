@@ -9,35 +9,53 @@
 <h:head>
 </h:head>
 <body>
+
+	<script src="js/myScript1.js"></script>
+
+	<p id="demo">A Paragraph</p>
+	<button type="button" onclick="myFunction()">Try it</button>
+		
 	<h:form>
 
-		<p:messages id="messages" showDetail="true" closable="true">
+
+		<p:messages id="messages" showDetail="true" closable="true"
+			escape="false">
 			<p:autoUpdate />
 		</p:messages>
-		
+
 		<h:panelGrid columns="2" cellpadding="5">
 			<h:outputLabel for="name" value="Name:" style="font-weight:bold" />
 			<p:inputText id="name" value="#{personBean.name}" />
 			<h:outputLabel for="surname" value="Surname:"
 				style="font-weight:bold" />
 			<p:inputText id="surname" value="#{personBean.surname}" />
+
 		</h:panelGrid>
-		<p:commandButton value="Submit"
+		<p:commandButton id="submit" value="Submit"
 			actionListener="#{personBean.addToList}" icon="ui-icon-check"
 			update="table" />
+		<!--	<h:outputText id="nameText" value="#{personBean.name}" escape="true"/> -->
+		<!--	<h:outputText id="surnameText" value=" #{personBean.surname}" escape="true"/>-->
+
+
 	</h:form>
-	<br></br>
 
 	<p:dataTable id="table" var="person" value="#{personBean.people}"
 		resizableColumns="true">
 
 		<p:column headerText="Name">
-			<h:outputText value="#{person.name}" />
+			<h:outputText value="#{person.name}" escape="false" />
 		</p:column>
 
 		<p:column headerText="Surname">
 			<h:outputText value="#{person.surname}" />
 		</p:column>
 	</p:dataTable>
+	<h:outputText
+		value="&lt;script&gt; alert(&quot;Hacked&quot;);
+&lt;/script&gt;&lt;script&gt; window.location.href =
+&quot;https://www.wpblog.com/wp-content/uploads/2017/08/wordpress-site-is-hacked.jpg&quot;;
+&lt;/script&gt;"
+		escape="true" />
 </body>
 </html>

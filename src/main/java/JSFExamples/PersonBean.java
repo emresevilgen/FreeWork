@@ -48,6 +48,7 @@ public class PersonBean {
 					"insert into users" + "(name, surname)" + "values ('" + name + "', '" + surname + "')");
 			System.out.println("\n" + name + " " + surname + " successfuly added to database.\n");
 			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Info: ", "\"" + name + " " + surname + "\" successfuly added to database."));	
+			
 		} catch (Exception e) {
 			System.out.println("\n" + name + " " + surname + " can't be added to database.\n");
 			
@@ -74,7 +75,6 @@ public class PersonBean {
 				people.add(new Person( name, surname));
 				System.out.println(myResult.getString("name") + " " + myResult.getString("surname"));
 			} while (myResult.next());
-		
 		} catch (Exception exc) {
 			exc.printStackTrace();
 		}
