@@ -1,4 +1,4 @@
-# FreeWork
+# THYInternshipWorks
 
 Prerequisites:
 
