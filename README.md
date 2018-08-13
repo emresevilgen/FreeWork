@@ -13,7 +13,7 @@ Prerequisites:
 9. HTML 											- done
 10. CSS 											- done
 11. JavaScript										- done
-12. Log4J											- in progress
+12. Log4J											- done
 13. Monitoring (OpenView, SiteScope, SolarWinds)	- in progress
 14. JSF - LifeCycle									- in progress
 15. Eight Fallacies of Distributed Computing		- in progress
