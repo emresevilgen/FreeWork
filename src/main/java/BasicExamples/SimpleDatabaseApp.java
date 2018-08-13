@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class SimpleDatabaseApp {
 	
 	public static void main(String[] args) {
-		final String url = "jdbc:mysql://localhost:3306/freework";
+		final String url = "jdbc:mysql://localhost:3306/thyinternshipworks";
 		final String username = "emresevilgen";
 		final String password = "1234";
 		Connection myConnection;

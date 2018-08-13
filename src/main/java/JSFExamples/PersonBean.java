@@ -11,7 +11,7 @@ import javax.faces.context.FacesContext;
 @ManagedBean
 public class PersonBean {
 
-	private final String url = "jdbc:mysql://localhost:3306/freework";
+	private final String url = "jdbc:mysql://localhost:3306/thyinternshipworks";
 	private final String username = "emresevilgen";
 	private final String password = "1234";
 	private Connection myConnection;
@@ -19,7 +19,7 @@ public class PersonBean {
 	private ResultSet myResult;
 	private List<Person> people;
 	private Person person;
-	
+
 	public PersonBean() {
 		person = new Person();
 		try {
@@ -27,9 +27,9 @@ public class PersonBean {
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} 
+		}
 	}
-	
+
 	private void initStatement() {
 		try {
 			myConnection = DriverManager.getConnection(url, username, password);
@@ -39,40 +39,47 @@ public class PersonBean {
 		}
 	}
 
-	public void addToList(){
+	public void addToList() {
 		String name = person.getName();
 		String surname = person.getSurname();
 		try {
-			initStatement();
-			myStatement.executeUpdate(
-					"insert into users" + "(name, surname)" + "values ('" + name + "', '" + surname + "')");
-			System.out.println("\n" + name + " " + surname + " successfuly added to database.\n");
-			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Info: ", "\"" + name + " " + surname + "\" successfuly added to database."));	
-			
+			if (name.equals("") || surname.equals("")) {
+				FacesContext.getCurrentInstance().addMessage(null,
+						new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error: ", " Name or surname cannot be empty."));
+
+			} else {
+				initStatement();
+				myStatement.executeUpdate(
+						"insert into users" + "(name, surname)" + "values ('" + name + "', '" + surname + "')");
+				System.out.println("\n" + name + " " + surname + " successfuly added to database.\n");
+				FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO,
+						"Info: ", "\"" + name + " " + surname + "\" successfuly added to database."));
+			}
 		} catch (Exception e) {
 			System.out.println("\n" + name + " " + surname + " can't be added to database.\n");
-			
-			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error: ","\"" + name + " " + surname + "\" can't be added to database."));
-		   
+
+			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error: ",
+					"\"" + name + " " + surname + "\" can't be added to database."));
+
 		}
-	
+
 	}
 
-	public List<Person> getPeople(){
+	public List<Person> getPeople() {
 		people = new ArrayList<Person>();
 		String name;
 		String surname;
 		try {
 			initStatement();
 			myResult = myStatement.executeQuery("select * from users");
-			
+
 			if (!myResult.next()) {
 				System.out.println("List is empty.");
 			}
 			do {
 				name = myResult.getString("name");
 				surname = myResult.getString("surname");
-				people.add(new Person( name, surname));
+				people.add(new Person(name, surname));
 				System.out.println(myResult.getString("name") + " " + myResult.getString("surname"));
 			} while (myResult.next());
 		} catch (Exception exc) {
@@ -80,7 +87,6 @@ public class PersonBean {
 		}
 		return people;
 	}
-	
 
 	public String getName() {
 		return person.getName();
@@ -98,6 +104,4 @@ public class PersonBean {
 		person.setSurname(surname);
 	}
 
-	
-	
 }
