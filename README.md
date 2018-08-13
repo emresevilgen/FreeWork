@@ -13,6 +13,7 @@ Prerequisites:
 9. HTML 											- done
 10. CSS 											- done
 11. JavaScript										- done
+12. XSS and CSRF									- done		
 12. Log4J											- done
 13. Monitoring (OpenView, SiteScope, SolarWinds)	- in progress
 14. JSF - LifeCycle									- in progress
@@ -44,6 +45,9 @@ Blog:
 6. Java Properties Files 			- done
 7. XFF and CSRF - presentation 		- in progress
 8. HTML, CSS and JavaScript 		- done
+9. Logging and Log4J				- done
+
+You can see the blog posts here: https://emresevilgen.wordpress.com/category/coding/
 
 
 
