@@ -2,28 +2,38 @@
 
 Prerequisites:
 
-1. Java EE 											- done
-2. Eclipse for Java EE 								- done
-3. Maven 											- done
-4. Java Conventions 								- done
-5. Design Patterns 									- done
-6. MySQL 											- done
-7. JSF 												- done
-8. PrimeFaces 										- done
-9. HTML 											- done
-10. CSS 											- done
-11. JavaScript										- done
-12. XSS and CSRF									- done		
-12. Log4J											- done
-13. Monitoring (OpenView, SiteScope, SolarWinds)	- in progress
-14. JSF - LifeCycle									- in progress
-15. Eight Fallacies of Distributed Computing		- in progress
-16. Spring											- in progress
-17. Angular 										- in progress
-18. Postman - for rest								- in progress
-19. Node.js											- in progress
-20. WireShark										- in progress
-21. PL/SQL											- in progress
+1. Java EE 												- done
+2. Eclipse for Java EE 									- done
+3. Maven 												- done
+4. Java Conventions 									- done
+5. Design Patterns 										- done
+6. MySQL 												- done
+7. JSF 													- done
+8. PrimeFaces 											- done
+9. HTML 												- done
+10. CSS 												- done
+11. JavaScript											- done
+12. XSS and CSRF										- done		
+12. Log4J												- done
+13. Monitoring (OpenView, SiteScope, SolarWinds)		- in progress
+14. JSF - LifeCycle										- in progress
+15. Eight Fallacies of Distributed Computing			- in progress
+16. Spring												- in progress
+17. Angular 											- in progress
+18. Postman - for rest									- in progress
+19. Node.js												- in progress
+20. WireShark											- in progress
+21. PL/SQL												- in progress
+22. FishEye (Code review)								- in progress
+23. Jenkins (Support for SVN, export package, version)	- in progress
+24. Test Driven Development								- in progress
+25. DevOps												- in progress
+26. Big Data (Spark, Apache Hadoop)						- in progress
+27. TensorFlow (Machine Learning, AI)					- in progress
+28. TCP/UDP (Network)									- in progress
+29. Linux												- in progress
+30. Crossover											- in progress
+
 
 
 Works:
