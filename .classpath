@@ -29,6 +29,6 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Munib Emre Sevilgen/Documents/GitHub/THYInternshipWorks/lib/mysql-connector-java-8.0.11.jar"/>
+	<classpathentry kind="lib" path="C:/Google Drive/Lessons/University/Internship/THY/Codes/THYInternshipWorks/lib/mysql-connector-java-8.0.11.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
